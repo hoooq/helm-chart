@@ -1,0 +1,83 @@
+{{- if eq .Values.broker.rabbitmq_host "rabbitmq" -}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rabbitmq  
+spec:
+  ingressClassName: {{ .Values.broker.rabbitmq_ingress_class }}
+  rules:
+    - host: {{ .Values.broker.rabbitmq_ingress_host }}
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: rabbitmq
+                port:
+                  name: http
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmq
+spec:
+  type: ClusterIP
+  ports:
+    - port: {{ .Values.broker.rabbitmq_port }}
+      targetPort: tcp
+      protocol: TCP
+      name: tcp
+    - port: {{ .Values.broker.rabbitmq_http_port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: rabbitmq
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rabbitmq
+spec:  
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: rabbitmq
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: rabbitmq
+    spec:
+      serviceAccountName: {{ include "hoooq-charts.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: rabbitmq
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "rabbitmq:3-management"
+          imagePullPolicy: IfNotPresent
+          env:
+          - name: RABBITMQ_DEFAULT_PASS
+            value: {{ .Values.broker.rabbitmq_password }}
+          - name: RABBITMQ_DEFAULT_USER
+            value: {{ .Values.broker.rabbitmq_username }}
+          - name: RABBITMQ_DEFAULT_VHOST
+            value: {{ .Values.broker.rabbitmq_vhost }}
+          - name: RABBITMQ_ERLANG_COOKIE
+            value: "SWQOKODSQALRPCLNMEQG"
+
+          ports:
+            - name: tcp
+              containerPort: {{ .Values.broker.rabbitmq_port }}
+              protocol: TCP
+            - name: http
+              containerPort: {{ .Values.broker.rabbitmq_http_port }}
+              protocol: TCP
+          resources: {}
+{{- end }}
