@@ -13,3 +13,4 @@ data:
   DATABASE_HOST: {{ .Values.repository.database_host }}
   DATABASE_NAME: {{ .Values.repository.database_name }}
   DATABASE_PORT: "{{ .Values.repository.database_port }}"
+  DATABASE_SSL: "{{ .Values.repository.database_ssl }}"

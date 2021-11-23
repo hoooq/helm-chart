@@ -51,6 +51,7 @@ repository:
   database_name: a2w-db
   database_port: 5432
   database_host: postgres
+  database_ssl: false
 
 broker:
   rabbitmq_host: rabbitmq
