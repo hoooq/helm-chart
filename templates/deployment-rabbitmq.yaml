@@ -1,23 +1,4 @@
 {{- if eq .Values.broker.rabbitmq_host "rabbitmq" -}}
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: rabbitmq  
-spec:
-  ingressClassName: {{ .Values.broker.rabbitmq_ingress_class }}
-  rules:
-    - host: {{ .Values.broker.rabbitmq_ingress_host }}
-      http:
-        paths:
-          - path: /
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: rabbitmq
-                port:
-                  name: http
-
----
 
 apiVersion: v1
 kind: Service
