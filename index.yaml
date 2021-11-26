@@ -3,12 +3,22 @@ entries:
   hoooq-charts:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-19T16:10:21.510123592-03:00"
+    created: "2021-11-26T15:20:16.871714375-03:00"
     description: A Helm chart for Kubernetes
-    digest: 18d6ca76392dec3ae1424d30c74072364535e95eda9e728bb3b1c759ac0bc67c
+    digest: 4ca409a3624a198623f9a96b2db7f6962db457185b2907b4030a0050aa35e75e
+    name: hoooq-charts
+    type: application
+    urls:
+    - https://hoooq.github.io/helm-chart/hoooq-charts-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-11-26T15:20:16.870762998-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 4e05e8b09c7c79c97f0752c93f3738e532f2c194e8b3bda435d149753d3df0c6
     name: hoooq-charts
     type: application
     urls:
     - https://hoooq.github.io/helm-chart/hoooq-charts-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-19T16:10:21.509288469-03:00"
+generated: "2021-11-26T15:20:16.869785595-03:00"
