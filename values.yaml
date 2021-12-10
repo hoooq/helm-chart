@@ -52,6 +52,7 @@ repository:
   database_port: 5432
   database_host: postgres
   database_ssl: false
+  database_uri: ""
 
 broker:
   rabbitmq_host: rabbitmq
