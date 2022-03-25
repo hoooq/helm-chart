@@ -11,7 +11,8 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      {{- include "hoooq-charts.selectorLabels" . | nindent 6 }}
+      app.kubernetes.io/instance: hoooq-ws
+      app.kubernetes.io/name: hoooq-charts
   template:
     metadata:
       {{- with .Values.podAnnotations }}

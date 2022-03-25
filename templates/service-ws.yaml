@@ -12,4 +12,5 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "hoooq-charts.selectorLabels" . | nindent 4 }}
+    app.kubernetes.io/instance: hoooq-ws
+    app.kubernetes.io/name: hoooq-charts
