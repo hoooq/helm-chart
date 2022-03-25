@@ -119,3 +119,4 @@ hoooq_ws:
   repository: willguitaradmfar/hoooq-ws
   enabled: true
   pullPolicy: Always
+  secret_domain_jwks: http://localhost:3000/security/jwks
