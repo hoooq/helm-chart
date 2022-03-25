@@ -6,7 +6,7 @@ metadata:
   name: mosquitto-config
 data:
   mosquitto.conf: |-
-    listener 1883
+    listener {{ .Values.mqtt.mqtt_port }}
     allow_anonymous true
     socket_domain ipv4
 
