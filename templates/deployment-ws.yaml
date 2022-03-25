@@ -11,16 +11,11 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      app.kubernetes.io/instance: hoooq-ws
-      app.kubernetes.io/name: hoooq-charts
+      app.kubernetes.io/name: hoooq-ws
   template:
     metadata:
-      {{- with .Values.podAnnotations }}
-      annotations:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
       labels:
-        {{- include "hoooq-charts.selectorLabels" . | nindent 8 }}
+        app.kubernetes.io/name: hoooq-ws
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
