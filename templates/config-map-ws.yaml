@@ -1,0 +1,9 @@
+{{- if .Values.hoooq_ws.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hoooq-ws
+data:
+  MQTT_PORT: "{{ .Values.mqtt.mqtt_port }}"
+  MQTT_HOST: {{ .Values.mqtt.mqtt_host }}
+{{- end }}

@@ -27,3 +27,9 @@ helm package .
 ```sh
 helm repo index --url https://hoooq.github.io/helm-chart .
 ```
+
+## Local generate
+
+```sh
+helm template . | less
+```

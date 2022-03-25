@@ -64,6 +64,12 @@ broker:
   rabbitmq_ingress_host: rabbitmq.example.com
   rabbitmq_ingress_class: ""
 
+mqtt:
+  mqtt_host: mosquitto
+  mqtt_port: 1883
+  mqtt_username: ""
+  mqtt_password: ""
+
 service:
   type: ClusterIP
   port: 80
@@ -108,3 +114,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+hoooq_ws:
+  repository: willguitaradmfar/hoooq-ws
+  enabled: true
+  pullPolicy: Always
