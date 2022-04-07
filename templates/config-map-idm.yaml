@@ -25,9 +25,9 @@ data:
   HOOOQ_IDM_DB_PARAMETER_ATTRIBUTE_VALUE: {{ .Values.hoooq_idm.hoooq_idm_db_parameter_attribute_value }}
   HOOOQ_IDM_DB_PARAMETER_COLLECTION: {{ .Values.hoooq_idm.hoooq_idm_db_parameter_collection }}
   SECURITY_JWK_KEY_STORE: {{ .Values.hoooq_idm.security_jwk_key_store }}
-  SECURITY_JWK_ROTATE_IN_DAYS: {{ .Values.hoooq_idm.security_jwk_rotate_in_days }}
-  SECURITY_JWK_ROTATE_SIZE: {{ .Values.hoooq_idm.security_jwk_rotate_size }}
-  JWT_EXPIRATION_MS: {{ .Values.hoooq_idm.jwt_expiration_ms }}
+  SECURITY_JWK_ROTATE_IN_DAYS: "{{ .Values.hoooq_idm.security_jwk_rotate_in_days }}"
+  SECURITY_JWK_ROTATE_SIZE: "{{ .Values.hoooq_idm.security_jwk_rotate_size }}"
+  JWT_EXPIRATION_MS: "{{ .Values.hoooq_idm.jwt_expiration_ms }}"
   FRONTEND_REDIRECT_URL: {{ .Values.hoooq_idm.frontend_redirect_url }}
-  AUTHORIZATION_CODE_EXPIRE_IN_MINUTES: {{ .Values.hoooq_idm.authorization_code_expire_in_minutes }}
+  AUTHORIZATION_CODE_EXPIRE_IN_MINUTES: "{{ .Values.hoooq_idm.authorization_code_expire_in_minutes }}"
 {{- end }}
