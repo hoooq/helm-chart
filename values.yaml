@@ -14,12 +14,12 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-serviceAccount:
-  # Specifies whether a service account should be created
+serviceLocal:
+  # Specifies whether a service local should be created
   create: true
-  # Annotations to add to the service account
+  # Annotations to add to the service local
   annotations: {}
-  # The name of the service account to use.
+  # The name of the service local to use.
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
@@ -120,3 +120,40 @@ hoooq_ws:
   enabled: true
   pullPolicy: Always
   secret_domain_jwks: http://localhost:3000/security/jwks
+  hoooq_username: app_user
+  hoooq_password: app_user
+  list_of_claims: sub,org,room,tenant
+
+hoooq_idm:
+  repository: willguitaradmfar/hoooq-idm
+  enabled: true
+  pullPolicy: Always
+  secret_domain_jwks: http://hoooq-idm/security/jwks
+  hoooq_username: app_user
+  hoooq_password: app_user
+  list_of_claims: sub,org,room,tenant
+  mongo_uri: "mongodb://user:P4ssw0rd@localhost:27017/app"
+  hoooq_idm_db_user_attribute_email: email
+  hoooq_idm_db_user_attribute_name: name
+  hoooq_idm_db_user_attribute_password: password
+  hoooq_idm_db_user_attribute_avatar: avatar
+  hoooq_idm_db_user_attribute_detail: detail
+  hoooq_idm_db_user_attribute_claims: claims
+  hoooq_idm_db_user_attribute_last_login: lastLoginAt
+  hoooq_idm_db_user_attribute_createdat: createdAt
+  hoooq_idm_db_user_attribute_two_fa_secret: twoFaSecret
+  hoooq_idm_db_user_attribute_email_verified_at: emailVerifiedAt
+  hoooq_idm_db_user_attribute_email_verified_code: emailVerifiedCode
+  hoooq_idm_db_user_collection: users
+  hoooq_idm_db_parameter_attribute_key: key
+  hoooq_idm_db_parameter_attribute_value: value
+  hoooq_idm_db_parameter_collection: parameters
+  security_jwk_key_store: SECURITY_JWK_KEY_STORE
+  security_jwk_rotate_in_days: 30
+  security_jwk_rotate_size: 10
+  jwt_expiration_ms: 3600000
+  oauth_google_id: ""
+  oauth_google_secret: ""
+  oauth_google_redirect_url: http://localhost:3000/api/v1/google/redirect
+  frontend_redirect_url: ""
+  authorization_code_expire_in_minutes: 10
