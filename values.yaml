@@ -152,8 +152,8 @@ hoooq_idm:
   security_jwk_rotate_in_days: 30
   security_jwk_rotate_size: 10
   jwt_expiration_ms: 3600000
-  oauth_google_id: ""
-  oauth_google_secret: ""
-  oauth_google_redirect_url: http://localhost:3000/api/v1/google/redirect
-  frontend_redirect_url: ""
+  oauth_google_id: oauth_google_id
+  oauth_google_secret: oauth_google_secret
+  oauth_google_redirect_url: oauth_google_redirect_url
+  frontend_redirect_url: http://fronend.localhost/login
   authorization_code_expire_in_minutes: 10
