@@ -14,7 +14,7 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-serviceLocal:
+serviceAccount:
   # Specifies whether a service local should be created
   create: true
   # Annotations to add to the service local
