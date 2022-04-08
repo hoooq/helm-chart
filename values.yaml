@@ -59,7 +59,8 @@ broker:
   rabbitmq_username: rabbitmq
   rabbitmq_password: rabbitmq
   rabbitmq_port: 5672
-  rabbitmq_http_port: 15672  
+  rabbitmq_http_port: 15672
+  rabbitmq_metrics_port: 15692
   rabbitmq_vhost: /
   rabbitmq_ingress_host: rabbitmq.example.com
   rabbitmq_ingress_class: ""

@@ -15,6 +15,10 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
+    - port: {{ .Values.broker.rabbitmq_metrics_port }}
+      targetPort: metrics
+      protocol: TCP
+      name: metrics
   selector:
     app.kubernetes.io/name: rabbitmq
 
@@ -59,6 +63,9 @@ spec:
               protocol: TCP
             - name: http
               containerPort: {{ .Values.broker.rabbitmq_http_port }}
+              protocol: TCP
+            - name: metrics
+              containerPort: {{ .Values.broker.rabbitmq_metrics_port }}
               protocol: TCP
           resources: {}
 {{- end }}
