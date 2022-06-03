@@ -38,6 +38,10 @@ spec:
                 name: hoooq
             - secretRef:
                 name: hoooq
+            {{ if .Values.hoooq.secretName }}
+            - secretRef:
+                name: {{ .Values.hoooq.secretName }}
+            {{ end }}
           ports:
             - name: http
               containerPort: 3000

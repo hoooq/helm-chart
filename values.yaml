@@ -54,6 +54,9 @@ repository:
   database_ssl: false
   database_uri: ""
 
+hoooq:
+  secretName: {}
+
 broker:
   rabbitmq_host: rabbitmq
   rabbitmq_username: rabbitmq
