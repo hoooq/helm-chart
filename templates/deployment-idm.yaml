@@ -39,6 +39,10 @@ spec:
                 name: hoooq
             - secretRef:
                 name: hoooq-idm
+            {{ if .Values.hoooq_idm.secretName }}
+            - secretRef:
+                name: {{ .Values.hoooq_idm.secretName }}
+            {{ end }}
           ports:
             - name: http
               containerPort: 3000

@@ -129,6 +129,7 @@ hoooq_ws:
   list_of_claims: sub,org,room,tenant
 
 hoooq_idm:
+  secretName: {}
   repository: willguitaradmfar/hoooq-idm
   enabled: true
   pullPolicy: Always
