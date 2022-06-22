@@ -123,7 +123,7 @@ hoooq_ws:
   repository: willguitaradmfar/hoooq-ws
   enabled: true
   pullPolicy: Always
-  secret_domain_jwks: http://localhost:3000/security/jwks
+  secret_domain_jwks: http://hoooq-idm/api/v1/security/jwks
   hoooq_username: app_user
   hoooq_password: app_user
   list_of_claims: sub,org,room,tenant
@@ -133,7 +133,7 @@ hoooq_idm:
   repository: willguitaradmfar/hoooq-idm
   enabled: true
   pullPolicy: Always
-  secret_domain_jwks: http://hoooq-idm/security/jwks
+  secret_domain_jwks: http://hoooq-idm/api/v1/security/jwks
   hoooq_username: app_user
   hoooq_password: app_user
   list_of_claims: sub,org,room,tenant
