@@ -18,7 +18,7 @@ jobs:
         export CURRENT_BRANCH=${{ github.head_ref }}
         echo "Current branch: $CURRENT_BRANCH"
         git checkout $CURRENT_BRANCH
-        git pull origin $CURRENT_BRANCH
+        git pull
         helm package hoooq/*
         helm repo index --url https://hoooq.github.io/helm-chart .
         cat index.yaml
