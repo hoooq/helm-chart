@@ -15,8 +15,8 @@ jobs:
     - name: Update repository
       run: |
         curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash -
-        git pull
         export CURRENT_BRANCH=$(git branch --show-current)
+        git pull origin $CURRENT_BRANCH
         helm package hoooq/*
         helm repo index --url https://hoooq.github.io/helm-chart .
         cat index.yaml
