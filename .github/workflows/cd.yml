@@ -15,7 +15,7 @@ jobs:
     - name: Update repository
       run: |
         curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash -        
-        export CURRENT_BRANCH=${{ github.ref_name }}
+        export CURRENT_BRANCH=${{ github.ref }}
         echo "Current branch: $CURRENT_BRANCH"
         git pull origin $CURRENT_BRANCH
         helm package hoooq/*
