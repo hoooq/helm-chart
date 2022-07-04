@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hoooq
+  name: service-ui
   labels:
     {{- include "hoooq-charts.labels" . | nindent 4 }}
 spec:

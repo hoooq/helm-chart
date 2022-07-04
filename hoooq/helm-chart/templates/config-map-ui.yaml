@@ -1,0 +1,7 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hoooq-ui
+data:
+  REACT_APP_SERVER_URL: {{ .Values.hoooq_ui.server_url }}
