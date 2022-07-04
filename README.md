@@ -16,16 +16,12 @@ helm install my-hoooq hoooq/hoooq-charts
 
 # Development
 
-## Package
+## Pull Request branch
 
+Example: `0.1.22`
+Command:
 ```sh
-helm package hoooq/*
-```
-
-## Indexing
-
-```sh
-helm repo index --url https://hoooq.github.io/helm-chart .
+git checkout -b 0.1.22
 ```
 
 ## Local generate
