@@ -19,7 +19,7 @@ helm install my-hoooq hoooq/hoooq-charts
 ## Package
 
 ```sh
-helm package .
+helm package hoooq/*
 ```
 
 ## Indexing
