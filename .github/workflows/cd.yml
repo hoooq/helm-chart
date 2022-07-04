@@ -1,0 +1,26 @@
+name: Helm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Update repository
+      run: |
+        curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash -
+        git pull
+        helm package hoooq/*
+        helm repo index --url https://hoooq.github.io/helm-chart .
+        cat index.yaml
+        git config --local user.email "action@github.com"
+        git config --local user.name "Deploy action"
+        git add .
+        git commit -m "Update helm charts"
+        git push
