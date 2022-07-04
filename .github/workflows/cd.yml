@@ -1,7 +1,7 @@
 name: Helm
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -14,8 +14,9 @@ jobs:
 
     - name: Update repository
       run: |
-        curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash -
-        git pull
+        curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash -        
+        export CURRENT_BRANCH=${{ github.head_ref }}
+        echo "Current branch: $CURRENT_BRANCH"
         helm package hoooq/*
         helm repo index --url https://hoooq.github.io/helm-chart .
         cat index.yaml
@@ -23,4 +24,4 @@ jobs:
         git config --local user.name "Deploy action"
         git add .
         git commit -m "Update helm charts"
-        git push
+        git push origin HEAD:$CURRENT_BRANCH --force
