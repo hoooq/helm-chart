@@ -34,7 +34,7 @@ jobs:
     - uses: actions/github-script@v6
       if: github.event_name == 'pull_request'
       env:
-        OUPUT: "terraform\n${{ steps.plan.outputs.stdout }}"
+        OUPUT: "terraform\n${{ steps.update-repository.outputs.stdout }}"
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
