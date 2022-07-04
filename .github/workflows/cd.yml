@@ -17,6 +17,7 @@ jobs:
         curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash -        
         export CURRENT_BRANCH=${{ github.head_ref }}
         echo "Current branch: $CURRENT_BRANCH"
+        git checkout $CURRENT_BRANCH
         git pull origin $CURRENT_BRANCH
         helm package hoooq/*
         helm repo index --url https://hoooq.github.io/helm-chart .
