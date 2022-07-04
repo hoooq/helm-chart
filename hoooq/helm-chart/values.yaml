@@ -5,9 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: willguitaradmfar/hoooq
+  repository: willguitaradmfar/hoooq-core
   pullPolicy: Always
-  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+image_ui:
+  repository: willguitaradmfar/hoooq-ui
+  pullPolicy: Always
   tag: ""
 
 imagePullSecrets: []
@@ -53,9 +57,6 @@ repository:
   database_host: postgres
   database_ssl: false
   database_uri: ""
-
-hoooq:
-  secretName: {}
 
 broker:
   rabbitmq_host: rabbitmq
@@ -118,6 +119,12 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+hoooq_core:
+  secretName: {}
+
+hoooq_ui:
+  server_url: "https://hoooq.example.com"
 
 hoooq_ws:
   repository: willguitaradmfar/hoooq-ws
