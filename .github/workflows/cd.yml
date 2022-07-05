@@ -18,8 +18,8 @@ jobs:
         curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash -
 
         export CURRENT_BRANCH=${{ github.head_ref }}
-
-        sed -i "s/^version:.*$/version: $CURRENT_BRANCH/" hoooq/helm-chart/Chart.yaml
+        
+        find hoooq -name Chart.yaml -exec sed -i "s/^version:.*$/version: $CURRENT_BRANCH/" {} \;
 
         echo "Current branch: $CURRENT_BRANCH"
         helm package hoooq/*

@@ -1,5 +1,5 @@
-{{- if eq .Values.repository.provider "postgres" -}}
-{{- if eq .Values.repository.database_host "postgres" -}}
+{{- if eq .Values.database.provider "postgres" -}}
+{{- if eq .Values.database.database_host "postgres" -}}
 apiVersion: v1
 kind: Service
 metadata:
@@ -7,7 +7,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - port: {{ .Values.repository.database_port }}
+    - port: {{ .Values.database.database_port }}
       targetPort: tcp
       protocol: TCP
       name: tcp
@@ -41,12 +41,12 @@ spec:
           imagePullPolicy: IfNotPresent
           env:
           - name: POSTGRES_PASSWORD
-            value: {{ .Values.repository.database_password }}
+            value: {{ .Values.database.database_password }}
           - name: POSTGRES_DB
-            value: {{ .Values.repository.database_name }}
+            value: {{ .Values.database.database_name }}
           ports:
             - name: tcp
-              containerPort: {{ .Values.repository.database_port }}
+              containerPort: {{ .Values.database.database_port }}
               protocol: TCP
           resources: {}
 {{- end }}
