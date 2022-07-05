@@ -28,17 +28,17 @@ spec:
         - name: hoooq-ws
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.hoooq_ws.repository }}:latest"
-          imagePullPolicy: {{ .Values.hoooq_ws.pullPolicy }}
+          image: "{{ .Values.image.repository }}:latest"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
             - configMapRef:
-                name: hoooq-core
-            - configMapRef:
                 name: hoooq-ws
             - secretRef:
-                name: hoooq-core
-            - secretRef:
                 name: hoooq-ws
+            {{ if .Values.hoooq_ws.secretName }}
+            - secretRef:
+                name: {{ .Values.hoooq_ws.secretName }}
+            {{ end }}
           ports:
             - name: http
               containerPort: 3000

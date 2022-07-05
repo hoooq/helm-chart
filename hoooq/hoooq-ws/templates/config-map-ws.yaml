@@ -9,6 +9,6 @@ data:
   SECRET_DOMAIN_JWKS: {{ .Values.hoooq_ws.secret_domain_jwks }}
   PROJECT_URL: http://hoooq-ws
   PREFIX_NOTIFY_HOOOQ: hoooq.ws
-  HOOOQ_URL: http://hoooq
+  HOOOQ_URL: http://hoooq-core
   LIST_OF_CLAIMS: {{ .Values.hoooq_ws.list_of_claims }}
 {{- end }}

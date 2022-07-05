@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hoooq-core
+data:
+  RABBITMQ_HOST: {{ .Values.broker.rabbitmq_host }}
+  RABBITMQ_PORT: "{{ .Values.broker.rabbitmq_port }}"
+  RABBITMQ_EXCHANGE: events
+  RABBITMQ_VHOST: ''
+  REPOSITORY_PROVIDER: {{ .Values.database.provider }}
+  {{ if .Values.database.database_uri }}  
+  {{ else }}
+  DATABASE_HOST: {{ .Values.database.database_host }}
+  DATABASE_NAME: {{ .Values.database.database_name }}
+  DATABASE_PORT: "{{ .Values.database.database_port }}"
+  DATABASE_SSL: "{{ .Values.database.database_ssl }}"
+  {{ end }}
