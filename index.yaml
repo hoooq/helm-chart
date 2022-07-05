@@ -3,7 +3,17 @@ entries:
   hoooq-core:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-05T19:15:17.179669941-03:00"
+    created: "2022-07-05T22:19:18.137865072Z"
+    description: Hoooq Core API
+    digest: 6f3b2b8f912ee4e8a44172e4fc6985335ef401a7c022876ef60a3bfb8488160b
+    name: hoooq-core
+    type: application
+    urls:
+    - https://hoooq.github.io/helm-chart/hoooq-core-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-05T22:19:18.137199468Z"
     description: Hoooq Core API
     digest: dd00b2136d7232f2a92ca1c8d93dc0a28b1452aa848330137cab581470011420
     name: hoooq-core
@@ -14,7 +24,17 @@ entries:
   hoooq-idm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-05T19:15:17.180396236-03:00"
+    created: "2022-07-05T22:19:18.139160579Z"
+    description: Hoooq IDM chart
+    digest: 1b701a84d3b67d1a7bcac21e138867f539d84b30a973078d8359e5c14d7ec7e4
+    name: hoooq-idm
+    type: application
+    urls:
+    - https://hoooq.github.io/helm-chart/hoooq-idm-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-05T22:19:18.138557076Z"
     description: Hoooq IDM chart
     digest: 7490f425e8d62af42bb8ad468fe6a84ad88223eaded68b83b49c08a43811f9a9
     name: hoooq-idm
@@ -25,7 +45,17 @@ entries:
   hoooq-ws:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-05T19:15:17.181027406-03:00"
+    created: "2022-07-05T22:19:18.140217785Z"
+    description: Hoooq WS chart
+    digest: 77530b9f82190a1a98f41f1cf41e0860ba58fc6dcb9dd22030ade619ea891142
+    name: hoooq-ws
+    type: application
+    urls:
+    - https://hoooq.github.io/helm-chart/hoooq-ws-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-05T22:19:18.139673982Z"
     description: Hoooq WS chart
     digest: 434cb227f825c39199f5f8771d3b68fea6bae793d7b7f7621150f8fa2ccb4868
     name: hoooq-ws
@@ -33,4 +63,4 @@ entries:
     urls:
     - https://hoooq.github.io/helm-chart/hoooq-ws-0.1.1.tgz
     version: 0.1.1
-generated: "2022-07-05T19:15:17.178480053-03:00"
+generated: "2022-07-05T22:19:18.136069361Z"
