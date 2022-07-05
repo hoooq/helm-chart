@@ -7,7 +7,7 @@ data:
   SECRET_DOMAIN_JWKS: {{ .Values.hoooq_idm.secret_domain_jwks }}
   PROJECT_URL: http://hoooq-idm
   PREFIX_NOTIFY_HOOOQ: hoooq.idm
-  HOOOQ_URL: http://hoooq
+  HOOOQ_URL: http://hoooq-core
   LIST_OF_CLAIMS: {{ .Values.hoooq_idm.list_of_claims }}
   HOOOQ_IDM_DB_USER_ATTRIBUTE_EMAIL: {{ .Values.hoooq_idm.hoooq_idm_db_user_attribute_email }}
   HOOOQ_IDM_DB_USER_ATTRIBUTE_NAME: {{ .Values.hoooq_idm.hoooq_idm_db_user_attribute_name }}
