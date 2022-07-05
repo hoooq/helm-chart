@@ -32,11 +32,11 @@ spec:
           imagePullPolicy: {{ .Values.hoooq_ws.pullPolicy }}
           envFrom:
             - configMapRef:
-                name: hoooq
+                name: hoooq-core
             - configMapRef:
                 name: hoooq-ws
             - secretRef:
-                name: hoooq
+                name: hoooq-core
             - secretRef:
                 name: hoooq-ws
           ports:
