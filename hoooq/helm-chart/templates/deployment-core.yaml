@@ -10,11 +10,11 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: hoooq-idm
+      app.kubernetes.io/name: hoooq-core
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: hoooq-idm
+        app.kubernetes.io/name: hoooq-core
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:

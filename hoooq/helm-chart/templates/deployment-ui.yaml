@@ -10,11 +10,11 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: hoooq-ws
+      app.kubernetes.io/name: hoooq-ui
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: hoooq-ws
+        app.kubernetes.io/name: hoooq-ui
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
