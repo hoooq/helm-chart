@@ -32,11 +32,11 @@ spec:
           imagePullPolicy: {{ .Values.hoooq_idm.pullPolicy }}
           envFrom:
             - configMapRef:
-                name: hoooq
+                name: hoooq-core
             - configMapRef:
                 name: hoooq-idm
             - secretRef:
-                name: hoooq
+                name: hoooq-core
             - secretRef:
                 name: hoooq-idm
             {{ if .Values.hoooq_idm.secretName }}
