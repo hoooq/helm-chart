@@ -1,4 +1,3 @@
-{{- if .Values.hoooq_ws.enabled }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -11,4 +10,3 @@ data:
   PREFIX_NOTIFY_HOOOQ: hoooq.ws
   HOOOQ_URL: http://hoooq-core
   LIST_OF_CLAIMS: {{ .Values.hoooq_ws.list_of_claims }}
-{{- end }}
