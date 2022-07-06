@@ -69,7 +69,7 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 10
   targetCPUUtilizationPercentage: 80
-  targetMemoryUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
 
 nodeSelector: {}
 
@@ -78,6 +78,7 @@ tolerations: []
 affinity: {}
 
 hoooq_idm:
+  secretName: {}
   secret_domain_jwks: http://hoooq-idm/api/v1/security/jwks
   hoooq_username: app_user
   hoooq_password: app_user
