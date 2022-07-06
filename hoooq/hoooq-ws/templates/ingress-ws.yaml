@@ -14,7 +14,7 @@ apiVersion: extensions/v1beta1
 {{- end }}
 kind: Ingress
 metadata:
-  name: hoooq-core
+  name: hoooq-ws
   labels:
     {{- include "hoooq-charts.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
@@ -48,11 +48,11 @@ spec:
             backend:
               {{- if semverCompare ">=1.19-0" $.Capabilities.KubeVersion.GitVersion }}
               service:
-                name: hoooq-core
+                name: hoooq-ws
                 port:
                   name: http
               {{- else }}
-              serviceName: hoooq-core
+              serviceName: hoooq-ws
               servicePort: http
               {{- end }}
           {{- end }}
