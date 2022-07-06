@@ -34,7 +34,7 @@ securityContext: {}
 
 
 hoooq_ui:
-  reactAppServerUrl: "https:\/\/hoooq-core.example.com"
+  reactAppServerUrl: "https:\\/\\/hoooq-core.example.com"
 
 service:
   type: ClusterIP
