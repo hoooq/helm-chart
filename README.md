@@ -1,5 +1,11 @@
 # helm-chart
 
+## To Build and `pump version`, create a new branch with version. Example: 
+
+```bash
+git checkout -b 0.1.5
+```
+
 ## Add repository
 
 ```sh
