@@ -38,6 +38,8 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
+  labels:
+    app: hoooq-core
 
 ingress:
   enabled: false
