@@ -3,7 +3,17 @@ entries:
   hoooq-core:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.040337463Z"
+    created: "2023-11-21T07:13:58.772450172Z"
+    description: Hoooq Core API
+    digest: 552543b27a35af96948742820f98d1688be74d95a3bb07e96b1cb35ae4087ebf
+    name: hoooq-core
+    type: application
+    urls:
+    - https://hoooq.github.io/helm-chart/hoooq-core-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-11-21T07:13:58.772044133Z"
     description: Hoooq Core API
     digest: 25eae4e5e7b1eebb1bc2a88f96298803e5037e904ac214fbf3fd6aec1284ab8b
     name: hoooq-core
@@ -13,7 +23,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.039761554Z"
+    created: "2023-11-21T07:13:58.771630559Z"
     description: Hoooq Core API
     digest: 3fcc13352511f102b5b83e3f19239b2cac0c3dcc617b7bcf8f31cb7bbf226be2
     name: hoooq-core
@@ -23,7 +33,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.039171144Z"
+    created: "2023-11-21T07:13:58.771205644Z"
     description: Hoooq Core API
     digest: 4f338d4b5dc0fe9eef56436779da1c2025f0f0aa54c3eba4c25b398c118e726b
     name: hoooq-core
@@ -33,7 +43,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.038612835Z"
+    created: "2023-11-21T07:13:58.770803101Z"
     description: Hoooq Core API
     digest: a08c69f5fa4147bf1b6a9ab187a4976bb98a0d9301664ed1e903b4094456f789
     name: hoooq-core
@@ -43,7 +53,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.038006626Z"
+    created: "2023-11-21T07:13:58.770368819Z"
     description: Hoooq Core API
     digest: 6f3b2b8f912ee4e8a44172e4fc6985335ef401a7c022876ef60a3bfb8488160b
     name: hoooq-core
@@ -53,7 +63,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.037298014Z"
+    created: "2023-11-21T07:13:58.769762455Z"
     description: Hoooq Core API
     digest: dd00b2136d7232f2a92ca1c8d93dc0a28b1452aa848330137cab581470011420
     name: hoooq-core
@@ -64,7 +74,17 @@ entries:
   hoooq-idm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.044353126Z"
+    created: "2023-11-21T07:13:58.776283876Z"
+    description: Hoooq IDM chart
+    digest: 9a31bdf2decb0c0df8f35d7787cd9d8ef52220623b45898c7dc817c9b146a0c0
+    name: hoooq-idm
+    type: application
+    urls:
+    - https://hoooq.github.io/helm-chart/hoooq-idm-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-11-21T07:13:58.775120427Z"
     description: Hoooq IDM chart
     digest: 122a2c45fa6bcb848fbfee0ce819bbcc4097e947d636ef393da0723e838d719d
     name: hoooq-idm
@@ -74,7 +94,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.043783017Z"
+    created: "2023-11-21T07:13:58.774699068Z"
     description: Hoooq IDM chart
     digest: 99a62f45bd6d4d7d36087725f499da759ecb328b3586b8f84c1481bd17bf0daa
     name: hoooq-idm
@@ -84,7 +104,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.043217808Z"
+    created: "2023-11-21T07:13:58.774260158Z"
     description: Hoooq IDM chart
     digest: b5a768680f95280798eb8a3f6e91069f5f70e41d52243c1ebbdb867eef5aff04
     name: hoooq-idm
@@ -94,7 +114,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.042113091Z"
+    created: "2023-11-21T07:13:58.773797121Z"
     description: Hoooq IDM chart
     digest: 50b481836d2e76ddf5fd26b50c09aea46c394b4e2b1b1fb11da0d34f45a12e42
     name: hoooq-idm
@@ -104,7 +124,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.041519681Z"
+    created: "2023-11-21T07:13:58.773350326Z"
     description: Hoooq IDM chart
     digest: 1b701a84d3b67d1a7bcac21e138867f539d84b30a973078d8359e5c14d7ec7e4
     name: hoooq-idm
@@ -114,7 +134,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.040907372Z"
+    created: "2023-11-21T07:13:58.772904652Z"
     description: Hoooq IDM chart
     digest: 7490f425e8d62af42bb8ad468fe6a84ad88223eaded68b83b49c08a43811f9a9
     name: hoooq-idm
@@ -125,7 +145,17 @@ entries:
   hoooq-ui:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.046272657Z"
+    created: "2023-11-21T07:13:58.777543692Z"
+    description: Hoooq UI API
+    digest: e9ca84e457b4e649cbc8e771d51683df57e5e2966d0591ca02fbec15b1508787
+    name: hoooq-ui
+    type: application
+    urls:
+    - https://hoooq.github.io/helm-chart/hoooq-ui-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-11-21T07:13:58.777234003Z"
     description: Hoooq UI API
     digest: dc6bf35a4fd7196227777e52c1d248d1ec6c8e8855b1a35f4b8d831bb1cd5403
     name: hoooq-ui
@@ -135,7 +165,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.045702248Z"
+    created: "2023-11-21T07:13:58.776930606Z"
     description: Hoooq UI API
     digest: 3d2b8efcd1e2ca39d8a1ff3e58f45a8cf48df7acb857ae55cd97dbf965c56bcb
     name: hoooq-ui
@@ -145,7 +175,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.044758433Z"
+    created: "2023-11-21T07:13:58.776619353Z"
     description: Hoooq UI API
     digest: aa70cceb1bb2b281663e66d1ccccb2056a9374a4de35bf33c7dd8165c26f9b78
     name: hoooq-ui
@@ -156,7 +186,17 @@ entries:
   hoooq-ws:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.050147818Z"
+    created: "2023-11-21T07:13:58.780282575Z"
+    description: Hoooq WS chart
+    digest: 560986408e983b3701587703df94657b79c038f3d7b6cd9872bd9337a0918b5b
+    name: hoooq-ws
+    type: application
+    urls:
+    - https://hoooq.github.io/helm-chart/hoooq-ws-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-11-21T07:13:58.779890422Z"
     description: Hoooq WS chart
     digest: 57524d75514af148df8bcf7cd6782d4fa1b463731ea24dfe45fc9217326d59e3
     name: hoooq-ws
@@ -166,7 +206,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.04961271Z"
+    created: "2023-11-21T07:13:58.77947778Z"
     description: Hoooq WS chart
     digest: c0f329a5d631ea3cbc994d7fbe103a62cd31f4502387927a26bb896802d54118
     name: hoooq-ws
@@ -176,7 +216,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.049046501Z"
+    created: "2023-11-21T07:13:58.779094954Z"
     description: Hoooq WS chart
     digest: 34de58bcfc7e947f532152a4299c1d524e5d4f7f4d898914936a4fe94e18ae9e
     name: hoooq-ws
@@ -186,7 +226,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.048538793Z"
+    created: "2023-11-21T07:13:58.778712989Z"
     description: Hoooq WS chart
     digest: f1803126dd0112a663363abacd09869bdfeb0b04f336bef57be144325cf03f90
     name: hoooq-ws
@@ -196,7 +236,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.048027685Z"
+    created: "2023-11-21T07:13:58.778337918Z"
     description: Hoooq WS chart
     digest: 77530b9f82190a1a98f41f1cf41e0860ba58fc6dcb9dd22030ade619ea891142
     name: hoooq-ws
@@ -206,7 +246,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-17T00:38:56.047509676Z"
+    created: "2023-11-21T07:13:58.77792219Z"
     description: Hoooq WS chart
     digest: 434cb227f825c39199f5f8771d3b68fea6bae793d7b7f7621150f8fa2ccb4868
     name: hoooq-ws
@@ -214,4 +254,4 @@ entries:
     urls:
     - https://hoooq.github.io/helm-chart/hoooq-ws-0.1.1.tgz
     version: 0.1.1
-generated: "2022-09-17T00:38:56.036210597Z"
+generated: "2023-11-21T07:13:58.768266331Z"
